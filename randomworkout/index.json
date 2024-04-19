@@ -1,0 +1,12 @@
+{  "utrustning":
+[
+  {"Kettlebell": {"namn": [" Swing", " Clean", " Press", " TGU", " Snatch", " Goblet Squat", " Utfall med press", " Renegade row", " Suitcase walk"]}},
+  {"Trx": {"namn": [" Rodd", " Pistolsquats", " Benindrag", " Superman", " Bröstpress", " Omvända flies"]}},
+  {"Kroppsvikt": {"namn": [" Armhävning", " Utfall", " Sit ups", " Knäböj", " Rygglyft", " Planka"]}},
+  {"Hiit": {"namn": [" Burpees", " Boxjump", " Thrusters", " Wallball", " Hopprep", " Toes to bar", " Handstand pushup", " Armhävning", " Utfall", " Sit ups", " Knäböj", " Rygglyft", " Planka", " Rodd", " Pistolsquats", " Benindrag", " Superman", " Bröstpress", " Omvända flies", " Swing", " Clean", " Press", " TGU", " Snatch", " Goblet Squat", " Utfall med press", " Renegade row", " Suitcase walk" ]}}
+],
+"tid":
+[{"Tabata": "45 sek arbete, 30 sek vila per övning * 8 rundor"},
+{"TioRepsFyraSet": "10 repetitioner arbete * 4 set per övning"}
+]
+}

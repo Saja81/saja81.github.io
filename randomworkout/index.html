@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The random workout planner</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Random Exercice Generator</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Random övning</a></li>
+          <li><a href="randomworkout.html">Random workout</a></li>
+          <li><a href="mindata.html">Min data</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h2>Vad ska jag träna idag?</h2>
+        <section>
+          <p>Tryck på knappen för ny övning</p>
+
+          <div id="sectionbtn">
+            <input id="button" type="button" value="Ny övning" />
+          </div>
+
+          <div>
+            <h3 id="nameOfExercise">Övningens namn</h3>
+            <h4><strong>Muskler:</strong></h4>
+            <p id="primaryMuscles">Primära muskler</p>
+            <h4><strong>Beskrivning av övningen:</strong></h4>
+            <p id="description">Beskrivning av övningen</p>
+            <h4><strong>Bild/video:</strong></h4>
+            <img src="barbell.jpg" alt="" />
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>&copy; Sandra Jakobsson 2022</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

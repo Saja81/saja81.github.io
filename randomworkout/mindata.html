@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>The random workout planner</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Random Exercice Generator</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Random övning</a></li>
+          <li><a href="randomworkout.html">Random workout</a></li>
+          <li><a href="mindata.html">Min data</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h2>Träningsvolym September - November 2022</h2>
+      <canvas id="myChart"></canvas>
+      <input
+        id="pushlabel"
+        type="text"
+        placeholder="Dagens pass"
+        class="form-control mb-3"
+      />
+      <input
+        id="pushvalue"
+        type="number"
+        placeholder="Antal kilon"
+        class="form-control mb-3"
+      />
+
+      <button id="push" class="btn btn-dark btn-sm w-100">
+        Lägg in nytt pass
+      </button>
+    </div>
+
+    <footer>
+      <p>&copy; Sandra Jakobsson 2022</p>
+    </footer>
+
+    <script src="mindata.js"></script>
+  </body>
+</html>

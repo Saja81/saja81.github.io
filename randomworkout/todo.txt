@@ -1,0 +1,5 @@
+ATT FIXA
+1. randomworkout.js: if sats som kollar efter identiska övningar och då randomar igen.
+2. Förkorta kod genrellt, skapa funktioner för upprepande kod.
+3. Muskelkarta
+4. Eventuellt göra om/förenkla jsonfilen.
