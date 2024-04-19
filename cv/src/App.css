@@ -1,0 +1,87 @@
+@font-face {
+  font-family: Fontname;
+  src: url("fonts/italianno/italianno-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* .App {
+  text-align: center;
+} */
+
+body {
+  margin: 50px;
+}
+
+input {
+  background-color: #61dafb;
+}
+
+.vid {
+  color: #1c8eb5;
+}
+
+.App-main {
+  margin-top: 50px;
+}
+
+img {
+  height: 200px;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.HeaderKomponent {
+  background-color: #e4f6fb;
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h2 {
+  color: #1c8eb5;
+}
+
+h5 {
+  color: #1c8eb5;
+}
+
+h6 {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+video {
+  background-color: grey;
+}
+
+#navul {
+  display: flex;
+}
+
+#navul li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#headerett {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+#somecontext {
+  color: darkorchid;
+}
+
+#sign {
+  font-family: "Fontname";
+  font-size: 35px;
+}
+
+.klart {
+  color: green;
+}
