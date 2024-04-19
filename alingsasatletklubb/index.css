@@ -1,0 +1,195 @@
+main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  background-color: #ee242c;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ee242c;
+  padding: 50px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+a:hover {
+  color: silver;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#om {
+  margin: 40px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#omintro {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+a {
+  padding-left: 10px;
+  color: #050505;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.knapp {
+  background-color: #ee242c;
+  color: #050505;
+  border: none;
+  box-shadow: none;
+  padding: 10px;
+  margin-top: 90px;
+  transition: transform 0.3s;
+}
+
+.knapp:hover {
+  transform: scale(1.1);
+}
+
+.meriter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.meriterlista {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.meriterlista li {
+  color: Gold;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.6;
+  padding: 10px;
+}
+
+/* min lista ska ej ha bakgrundfärg med opacity, detta används endast här för att upp nå projektets krav  */
+
+form {
+  margin-top: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#inputbutton {
+  background-color: #ef1111;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#inputbutton:hover {
+  background-color: #ff4949;
+}
+
+img {
+  border-radius: 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.slide-in-img {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(600%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1em;
+}
+
+p {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  /* article {
+    width: 100%;
+  } */
+
+  #omintro {
+    flex-direction: column;
+  }
+  img {
+    width: 60px;
+    height: auto;
+  }
+
+  .meriterlista {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #faq {
+    background-image: url(background.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .faqp {
+    padding-left: 400px;
+  }
+}
+
+/* Ovan använder jag bakgrundsbild för att uppnå projektets mål. Senare kommer jag troligtvis att använda img istället för bakgrundsbild.  */

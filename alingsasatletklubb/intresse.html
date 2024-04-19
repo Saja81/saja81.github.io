@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Alingsås Atletklubb</title>
+  </head>
+  <body>
+    <header>
+      <h1>AAK</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="om.html">Om </a></li>
+          <li><a href="intresse.html">Intresse</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Formuläret har för närvarande ingen funktion för att skicka input värden till exempelvis min mail. -->
+      <article>
+        <h3>Skicka in ditt intresse så kontaktar jag dig!</h3>
+        <form method="GET">
+          <label for="namn">Namn:</label><br />
+          <input type="text" id="namn" name="namn" required /><br />
+          <label for="epost">Epost:</label><br />
+          <input type="email" id="epost" name="epost" required /><br />
+          <label for="meddelande">Meddelande:</label><br />
+          <textarea
+            id="meddelande"
+            name="meddelande"
+            rows="4"
+            cols="50"
+            required
+          ></textarea
+          ><br />
+          <input id="inputbutton" type="submit" name="submit" value="Skicka" />
+        </form>
+      </article>
+    </main>
+    <footer>&#169; 2024 Alingsås Atletklubb</footer>
+  </body>
+</html>
