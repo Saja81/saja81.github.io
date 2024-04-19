@@ -1,0 +1,210 @@
+@font-face {
+  font-family: PlayfairDisplaySC-Regular;
+  src: url(PlayfairDisplaySC-Regular.ttf);
+}
+
+/* Styling nav */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding: 3px;
+}
+
+nav a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #c7b767;
+  color: black;
+  box-shadow: 2px 2px;
+}
+
+/* Styling header */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-image: url(media/skog_liten.png);
+  background-color: green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: rgba(60, 60, 60, 0.5);
+  font-family: PlayfairDisplaySC-Regular, serif;
+}
+
+/* Styling sectioner */
+
+/* Döljer rubriken visuellt men läses av skärmläsare */
+#hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+h3 {
+  display: inline;
+  background-color: rgba(60, 60, 60, 0.8);
+  color: white;
+  font-size: 1.5em;
+}
+
+section a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c8b86a
+}
+
+#vandring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(media/vandring_liten.png);
+  background-color: grey;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#matlagning  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(media/mat2_liten.png);
+  background-color: grey;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#eld {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(media/eld2_liten.png);
+  background-color: grey;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sova_ute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(media/talt2_liten.png);
+  background-color: darkgoldenrod;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  margin-top: 10px;
+}
+
+/* Styling footer */
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer h2 {
+  font-family: PlayfairDisplaySC-Regular, serif;
+}
+
+.ikon {
+  display: inline;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.ikon a:hover {
+  color: deepskyblue;
+}
+
+p {
+  color: #333;
+}
+
+#copywright {
+  font-size: 0.7em;
+  padding-top: 10px;
+}
+
+/* Styling mediaquire */
+
+@media (min-width: 600px) {
+  article {
+    display: grid;
+    grid-template-areas:
+    "vandring matlagning"
+    "eld      sova_ute";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+
+  header {
+    background-image: url(media/skog_stor.png);
+    height: 400px;
+  }
+
+  section {
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+ li {
+    padding: 5px;
+  }
+
+  #vandring {
+    background-image: url(media/vandring_stor.png);
+    grid-area: vandring;
+  }
+
+  #matlagning {
+    background-image: url(media/mat2_stor.png);
+    grid-area: matlagning;
+  }
+
+  #eld {
+    grid-area: eld;
+    background-image: url(media/eld2_stor.png);
+  }
+
+  #sova_ute {
+    grid-area: sova_ute;
+    background-image: url(media/talt2_stor.png);
+  }
+}

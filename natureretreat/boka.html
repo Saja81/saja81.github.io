@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ett företag som erbjuder kurser och event för friluftsintresserade. Företaget erbjuder vandringar, matlagning, eldkurs samt övernattning i skog."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="formular.css" />
+    <title>Nature Retreat</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="om_oss.html">Om oss</a></li>
+        <li><a href="vara_aktiviteter.html">Våra aktiviteter</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>Nature Retreat</h1>
+    </header>
+    <h2>Boka aktivitet</h2>
+    <div id="divformulär">
+      <form
+        action="http://studentiths.se/sandrajakobsson/svar_bokning.html"
+        target="_blank"
+        method="post"
+      >
+        <label for="aktivitet">Aktivitet</label>
+        <select id="aktivitet" name="aktivitet">
+          <option value="vandring">Välj önskad aktivitet</option>
+          <option value="vandring">Kort vandring 8/10</option>
+          <option value="vandring">Lång vandring 15/10</option>
+          <option value="vandring">Matlagning 9/10</option>
+          <option value="vandring">Eldkurs 16/10</option>
+          <option value="vandring">Sova ute 30/9</option>
+          <option value="vandring">All inclusive 1/10</option>
+        </select>
+        <p style="font-style: italic">
+          Betalning sker via faktura som skickas efter bokning.
+        </p>
+        <label for="name">Namn</label>
+        <input id="name" name="name" placeholder="Förnamn + Efternamn" />
+
+        <label for="adress">Adress</label>
+        <input
+          id="adress"
+          placeholder="Adress inkl postnr/postort"
+          type="text"
+        />
+
+        <label for="email">E-post</label>
+        <input id="email" placeholder="E-post" type="text" />
+
+        <label for="phonenumber">Mobilnummer</label>
+        <input id="phonenumber" placeholder="Mobilnummer" type="text" />
+
+        <label for="kost">Specialkost ex allergi/veg</label>
+        <input id="kost" name="kost" placeholder="Ev specialkost" type="text" />
+
+        <label for="message">Övrig info</label>
+        <textarea
+          cols="40"
+          id="message"
+          name="message"
+          placeholder="Övrig info till oss"
+          rows="10"
+        ></textarea>
+
+        <input id="skicka" type="submit" value="Skicka" />
+      </form>
+    </div>
+
+    <footer>
+      <h2>NR</h2>
+      <p class="ikon">
+        <a href="https://www.facebook.com/sandra.jakobsson.56" target="_blank"
+          ><i class="bi bi-facebook"></i
+        ></a>
+      </p>
+      <p class="ikon">
+        <a href="https://www.instagram.com/sandrajakobsson_81/" target="_blank"
+          ><i class="bi bi-instagram"></i
+        ></a>
+      </p>
+      <p id="copywright">&copy; 2022 Nature Retreat</p>
+    </footer>
+  </body>
+</html>
